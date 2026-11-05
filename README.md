@@ -4,7 +4,7 @@ Requirements: Node.js >= 20 (tested on v22), Python 3 (only to serve the UI). No
 
 | Action | Command |
 |---|---|
-| Run all tests (27) | `npm test` |
+| Run all tests (22 = 5 v1 + 17 v2) | `npm test` |
 | Baseline v1 tests only | `npm run test:v1` |
 | Final v2 tests only | `npm run test:v2` |
 | Run UI | `npm start`, open http://localhost:8080/v2_final/ (v1: /v1_initial/) |

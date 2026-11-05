@@ -6,133 +6,133 @@ TAP version 13
 # Subtest: V1 AC1 invalid time format / end before start / before now
 ok 1 - V1 AC1 invalid time format / end before start / before now
   ---
-  duration_ms: 1.290447
+  duration_ms: 1.581912
   type: 'test'
   ...
 # Subtest: V1 AC2 120 ok, 121 rejected
 ok 2 - V1 AC2 120 ok, 121 rejected
   ---
-  duration_ms: 0.225062
+  duration_ms: 0.176062
   type: 'test'
   ...
 # Subtest: V1 AC3 blocked room
 ok 3 - V1 AC3 blocked room
   ---
-  duration_ms: 0.182006
+  duration_ms: 0.17043
   type: 'test'
   ...
 # Subtest: V1 AC4 touching ok, overlapping conflict
 ok 4 - V1 AC4 touching ok, overlapping conflict
   ---
-  duration_ms: 0.134601
+  duration_ms: 0.133946
   type: 'test'
   ...
 # Subtest: V1 AC5 booking data not mutated
 ok 5 - V1 AC5 booking data not mutated
   ---
-  duration_ms: 0.197108
+  duration_ms: 0.202752
   type: 'test'
   ...
 # Subtest: AC1 invalid time inputs are rejected
 ok 6 - AC1 invalid time inputs are rejected
   ---
-  duration_ms: 1.308582
+  duration_ms: 1.537037
   type: 'test'
   ...
 # Subtest: AC2 boundary: exactly 120 min allowed
 ok 7 - AC2 boundary: exactly 120 min allowed
   ---
-  duration_ms: 0.232
+  duration_ms: 0.2422
   type: 'test'
   ...
 # Subtest: AC2 boundary: 121 min rejected
 ok 8 - AC2 boundary: 121 min rejected
   ---
-  duration_ms: 0.103601
+  duration_ms: 0.183124
   type: 'test'
   ...
 # Subtest: AC3 blocked room is never available
 ok 9 - AC3 blocked room is never available
   ---
-  duration_ms: 0.133298
+  duration_ms: 0.121591
   type: 'test'
   ...
 # Subtest: AC4 touching intervals are allowed (before and after)
 ok 10 - AC4 touching intervals are allowed (before and after)
   ---
-  duration_ms: 0.230474
+  duration_ms: 0.216189
   type: 'test'
   ...
 # Subtest: AC4 overlapping intervals conflict (partial, contained, containing)
 ok 11 - AC4 overlapping intervals conflict (partial, contained, containing)
   ---
-  duration_ms: 0.14469
+  duration_ms: 0.124414
   type: 'test'
   ...
 # Subtest: AC5 data is deep-frozen and checks do not mutate it
 ok 12 - AC5 data is deep-frozen and checks do not mutate it
   ---
-  duration_ms: 0.534853
+  duration_ms: 0.628778
   type: 'test'
   ...
 # Subtest: Catalog has >= 4 rooms with required fields
 ok 13 - Catalog has >= 4 rooms with required fields
   ---
-  duration_ms: 0.275274
+  duration_ms: 0.267018
   type: 'test'
   ...
 # Subtest: F1 capacity: exact capacity matches, insufficient does not
 ok 14 - F1 capacity: exact capacity matches, insufficient does not
   ---
-  duration_ms: 0.928185
+  duration_ms: 0.992315
   type: 'test'
   ...
 # Subtest: F2 equipment: room must contain ALL selected items
 ok 15 - F2 equipment: room must contain ALL selected items
   ---
-  duration_ms: 0.432181
+  duration_ms: 0.451667
   type: 'test'
   ...
 # Subtest: F1+F2 combined filters
 ok 16 - F1+F2 combined filters
   ---
-  duration_ms: 0.178911
+  duration_ms: 0.174287
   type: 'test'
   ...
 # Subtest: F3 blocked room reported as blocked via view
 ok 17 - F3 blocked room reported as blocked via view
   ---
-  duration_ms: 0.275496
+  duration_ms: 0.178913
   type: 'test'
   ...
 # Subtest: F4 empty state when no rooms match (integration)
 ok 18 - F4 empty state when no rooms match (integration)
   ---
-  duration_ms: 0.334806
+  duration_ms: 0.304716
   type: 'test'
   ...
 # Subtest: F5 switching room refreshes result and uses that room's own bookings
 ok 19 - F5 switching room refreshes result and uses that room's own bookings
   ---
-  duration_ms: 0.211374
+  duration_ms: 0.152355
   type: 'test'
   ...
 # Subtest: F5 selected room hidden by filter falls back to first match
 ok 20 - F5 selected room hidden by filter falls back to first match
   ---
-  duration_ms: 0.120065
+  duration_ms: 0.093882
   type: 'test'
   ...
 # Subtest: UI render escapes HTML and sets status role
 ok 21 - UI render escapes HTML and sets status role
   ---
-  duration_ms: 0.11293
+  duration_ms: 0.102088
   type: 'test'
   ...
 # Subtest: UI room options mark selected and blocked rooms
 ok 22 - UI room options mark selected and blocked rooms
   ---
-  duration_ms: 0.212819
+  duration_ms: 0.128404
   type: 'test'
   ...
 1..22
@@ -143,4 +143,4 @@ ok 22 - UI room options mark selected and blocked rooms
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 161.898224
+# duration_ms 181.718843

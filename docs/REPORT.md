@@ -37,12 +37,12 @@ Design decisions: (a) **pure domain functions** (`checkAvailability(room, …)` 
 Success: attendees 30, projector+video-conf → Gamma Hall, 13:00–15:00 → *available*. Failure: no match (attendees 81) → empty state. Switch room: R101 10:00–11:00 *conflict* → R201 *available*. Blocked: Delta Meeting → *blocked*. 121 min → *invalid*.
 
 ## 5. Automated testing (Task 4)
-Commands: `npm test` → **22/22 pass** in v2 file (+5 v1 baseline = 27/27); full log `docs/test-results.txt`. Boundaries covered: 120/121 min, touching/overlapping, capacity 30 vs 31. Integration/UI: `computeView` F4/F5 and `renderResult`/`renderRoomOptions` checks.
+Commands: `npm test` → **17/17 pass** for v2 (+5 v1 baseline = 22/22 total); full log `docs/test-results.txt`. Boundaries covered: 120/121 min, touching/overlapping, capacity 30 vs 31. Integration/UI: `computeView` F4/F5 and `renderResult`/`renderRoomOptions` checks.
 
 ## 6. Quality evaluation (Task 5)
 | Measure | v1 | v2 | How obtained |
 |---|---|---|---|
-| Tests passed / total | 5/5 (AC only; F1–F5 not applicable) | 22/22 | `npm run test:v1`, `npm run test:v2` |
+| Tests passed / total | 5/5 (AC only; F1–F5 not applicable) | 17/17 | `npm run test:v1`, `npm run test:v2` |
 | Duplicated logic locations | 2 (validation, rendering) | 0 | manual code review of both versions |
 | Structure | 1 file, 1 room | 7 JS modules: data, time, availability, filter, controller, render, main | file listing |
 | Source lines (JS) | 40 | 83 | `wc -l` |
