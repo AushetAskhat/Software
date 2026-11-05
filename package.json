@@ -1,0 +1,11 @@
+{
+  "name": "smart-campus-room-checker",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/*.test.*\"",
+    "test:v1": "node --test tests/v1.test.cjs",
+    "test:v2": "node --test tests/v2.test.js",
+    "start": "python3 -m http.server 8080"
+  }
+}
