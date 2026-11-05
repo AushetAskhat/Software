@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Campus room checker</title><link rel="stylesheet" href="styles.css"></head>
+<body><main>
+<h1>Find a free room</h1><p class="sub">Today, current time 09:00. Bookings up to 120 minutes.</p>
+<form>
+  <label>Attendees <input id="attendees" type="number" min="1" inputmode="numeric"></label>
+  <fieldset><legend>Required equipment</legend><div id="equipment"></div></fieldset>
+  <label>Room <select id="room"></select></label>
+  <div class="row"><label>Start <input id="start" value="10:00" placeholder="HH:MM"></label>
+  <label>End <input id="end" value="11:00" placeholder="HH:MM"></label></div>
+</form>
+<div id="result" aria-live="polite"></div>
+</main><script type="module" src="src/main.js"></script></body></html>
