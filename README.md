@@ -1,19 +1,19 @@
-# Smart Campus Room Availability Checker (Assignment #04)
+# Smart Campus — Room Availability Checker (Practice #12)
 
-Requirements: Node.js >= 20 (tested on v22), Python 3 (only to serve the UI). No npm dependencies.
+Code-based vs low-code comparison. Full report: **[REPORT.md](REPORT.md)** · Low-code build steps: [POWERAPPS_GUIDE.md](POWERAPPS_GUIDE.md)
 
-| Action | Command |
-|---|---|
-| Run all tests (22 = 5 v1 + 17 v2) | `npm test` |
-| Baseline v1 tests only | `npm run test:v1` |
-| Final v2 tests only | `npm run test:v2` |
-| Run UI | `npm start`, open http://localhost:8080/v2_final/ (v1: /v1_initial/) |
+## Run
+- Open `index.html` in a browser (no build, no dependencies), or use the live demo: https://aushetaskhat.github.io/Software/
+- Tests: `npm test` (Node 18+). Or press **Run tests** on the page.
 
-Layout: `v1_initial/` (before, monolith) · `v2_final/` (after, modules) · `tests/` · `docs/` (report, AI evidence, test log).
-Fixed current time: 09:00. All data is fictional. Demo scenarios: see docs/REPORT.md §4.
-
-## Git
-- Tag `v1-initial` = original (before) version; tag `v2-final` = final (after) version.
-- Compare: `git diff v1-initial v2-final --stat` · History: `git log --oneline --decorate`
-- Publish: create an empty repo on GitHub, then
-  `git remote add origin <URL>` → `git push -u origin main --tags`
+## Structure
+```
+availability.js         rule engine: validate() + checkAvailability()  (no UI)
+app.js                  UI layer (textContent only)
+index.html              responsive page
+test-cases.js           shared inputs T1–T8 (same as low-code)
+tests/                  Node unit tests
+screenshots/            evidence
+lowcode/                Power Apps export (.msapp)
+```
+All data is fictional. No login, payment or database.
